@@ -1,0 +1,7 @@
+Stack
+function    description     example     timecomplexity      spacecomplexity
+push(element) inserts an element onto the stack cpp myStack.push(42); O(1) O(1)
+pop()       removes the top element from the stack      cpp myStack.pop()       O(1)    O(1)
+top()       Returns the top element of the stack    cpp int topElement = myStack.top();         O(1)    O(1)
+size()      Returns the number of elemetns in the stack         cpp int n = myStack.size();         O(1)    O(1)
+empty()     Checks if the stack is empty        cpp if (myStack.empty()) {/* stack is empty */}         O(1) O(1)

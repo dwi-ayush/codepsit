@@ -1,0 +1,47 @@
+HTML tags list
+
+
+tag name                                description
+<!...>                                  comments
+<!DOCTYPE html>                         declares DOCTYPE of page
+
+
+<a>                                     it is termed as an anchor tag and it creates a huperlink or link.
+<abbr>                                  it defines an abbreviation for a phrase or longer word.
+<acronym>                               it defines an acronym for a word(Not supported in HTML5)
+<address>                               it defines the author's contact information of the HTML article
+<applet>                                It defines an embedded Java applet. (Not supported in HTML5)
+<area>                                  it defines the area of an image map.
+<article>                               it defines the self-contained content.
+<aside>                                 it defines content aside from main content. Mainly represented 
+                                        as a sidebar.
+<audio>                                 it is used to enmbed sound content in HTML documents.
+<b>                                     it is used to make a text bold.
+<base>                                  this tag defines the base URL for all relative URLs within the documents
+
+<basefont>                              this tag is used to set the efault font,size and color for all elements of the document. (not supported in HTML5)
+
+<bdi>                                   th
+
+
+
+HTML list are used to specify list of information . all list may contain one or more list elements,
+there are 3 different types of HTML list
+-> Ordered list
+-> Unordered list
+-> description list (aka definition list)
+
+ORDERED LIST:
+
+    In HTML, an ordered list is created using the `<ol>` tag. The default numbering is numeric, but different types of numbering can be specified using the `type` attribute. Here are the types of ordered lists:
+
+1. Default Numeric List (1, 2, 3, ...) – This is the default behavior for an ordered list, where items are numbered sequentially.
+
+2. type = "a" Lowercase Letters (a, b, c, ...) – You can specify this type for lists that need to use lowercase letters for numbering.
+
+3. type = "A" Uppercase Letters (A, B, C, ...) – This type uses uppercase letters to number the list items.
+
+4. type = "i" Lowercase Roman Numerals (i, ii, iii, ...) – This format uses lowercase Roman numerals to number the list items.
+
+5. type = "I" Uppercase Roman Numerals (I, II, III, ...) – This format uses uppercase Roman numerals to number the list items.
+

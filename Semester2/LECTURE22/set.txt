@@ -1,0 +1,42 @@
+set
+->Ordered set
+->Unordered set
+->Multiset
+    ->ordered Multiset
+    ->unordered Multiset
+
+
+Sets are a type of associative container in which each element has to be unique because the value fo the elment identiesf it 
+the values areelements folowing a specific
+
+
+1.) sets are associative containers that store unique elemnets
+following a specfid ordered
+
+traversal using iterators
+
+2.) Multisets are associative containers that store multipe elements having equivalent values follwing a specfic order.
+
+by default set is ordered (sets or multiset both are ordered by default)
+stores element in sorted orderit allows the storage of multiple elemnets
+ we can erase more than 1 element by giving the start iterator and end iterator
+
+we have to specify unordered
+
+ordered_set: ordered set are associative containers that store unqiue elemnets in no particular order following are the propertof unordered set
+elements can be stored in any order ( no sroted order)
+stores only unique values
+hash-table used to store elements
+we can erase only the element for which the iterator position is given.
+
+Not:all other properties are similar to the set.
+
+4.) Unordered_multiset : Unordered_multiset is an associative container that contains a set of non-unique elements is unsorted order . following are the properof of unordered multiset.
+
+
+
+
+sets are immutable
+
+like other data structures
+

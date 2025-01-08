@@ -1,0 +1,28 @@
+body{
+    margin:0px;
+    background-color: #ffd700;
+}
+.intro{
+    margin:0px;
+    padding: 20px;
+    color:white;
+    font-size:75px;
+    font-family:'Courier New', Courier, monospace;
+}
+#head{
+    display: flex;
+    color:white;
+    font-size:100px;
+    /* text-decoration: underline; */
+    background-color: #0057b8;
+    height: 350px;
+}
+
+#russia{
+    border-radius: 15px;
+    width: 120px;
+}
+#spec{
+    font-size: 150px;
+    text-decoration: none;
+}

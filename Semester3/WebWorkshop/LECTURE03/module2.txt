@@ -1,0 +1,38 @@
+
+Topic : Quotation and Citation Element:-
+
+    <abbr> Defines an abbreviation or acronym
+    <address> defines contact information for the author/owner of a document
+    <bdo>   Defines the text direction
+    <blockquote> Defines a section that is quoted from another source
+    <cite> Defines the title of a work
+    <q> Defines a short inline quotation
+
+
+
+Topic : Link tag
+
+1.) The <link> tag defines the relationship between the current document and an external resource.
+2.) The <link> tag is most often used to link to external style sheets or to add a favicon to your website..
+3.) The <link> element is an empty element, it contains attributes only.
+
+A favicon is a small icon that represents a website or web page and is displayed in a browser's address bar, tabs, bookmark bar, and
+history
+
+
+The href attribute specifies the location (URL) of the external resource (most often a style sheet file).
+
+Syntax:= <link href="URL">
+
+The required rel attribute specifies the relationship between the current document and the linked
+document/resource.
+
+Syntax:- <link rel="value">
+
+
+//Practice QUESTIONS:-
+
+-> Create an HTML file with various elements demonstrating the use of attributes and include a link with attributes, and an image with attributes.
+-> Create an HTML document with a paragraph, a division containing multiple paragraphs, and a span element within a paragraph.
+-> Create an HTML document with an unordered list, an ordered list, and a description list.
+->Create an HTML document that uses global attributes like class, id, title, style, tab index and hidden.

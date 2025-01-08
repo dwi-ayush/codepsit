@@ -1,0 +1,8 @@
+Linked List
+
+
+Array - static 
+Vector - Dynamic -> (size and capacity concept)
+
+Linked List is also Dynamic
+

@@ -1,0 +1,10 @@
+Python was developed by Guido Van Rossum in 1991 on 20th feb while working on national research at netherland in 1989
+
+it was designed with help of C language and abc
+
+platform independent
+easy
+portable
+
+
+

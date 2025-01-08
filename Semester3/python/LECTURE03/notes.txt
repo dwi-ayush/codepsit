@@ -1,0 +1,50 @@
+List, Tuple, Set, Dictionary
+
+Four built-in data structures in Python:-
+list, tuple, set, Dictionary
+-each having qualities and usage different from the other three.
+
+List is a collection of items that is written with square brackets. It is mutable, ordered and allows duplicate members. Example: list = [1,2,3,'a','b',[3,5]]
+
+Tuple is a collection of objects that is written with first brackets. It is immutable. 
+Example: tuple = (2,1,10,4,7)
+
+Set is a collection of elements that is written with curly brackets. It is unindexed and unordered.
+Example: s = {x for x in 'abracadabra' if x not in 'abc'}
+
+Dictionary is a collection which is ordered, changeable and does not allow duplicates.
+It is written with curly brackets and objects are stored in key: value format.
+Example : X = {1:'a', 2:'b' , 3:'sdflkj'}
+
+
+Operators
+Addition +              Subtraction - 
+Multiplication *        Exponentiation **
+Division /              Integer division //
+Remainder %              
+Binary left shift <<    Binary right shift >>
+and &                   or |
+Less than <             Greater than >
+less than or equal to <=        Greater than or equal to >=
+Check equality ==          Check not equal !=
+
+
+
+
+
+Precendance of Operators
+Parenthesized expression  (.....)
+
+Exponent                    **
+Positive, negative, bitwsise not            +n,-n,~n 
+mul,float division, int div, Remainder      *,/,//,%
+add, Subtraction                            +,-
+Bitwise left, right shifts                  <<,>>
+Bitwise and                                 &
+Bitwise or                                  |
+membership and equality tests               in, not in, is, is not, <,<=,>,>=,!=,==
+boolean(logical) not                        not X
+boolean and                                 and
+boolean or                                  or
+conditional expression                      if .... else 
+

@@ -1,0 +1,77 @@
+History of HTML
+1991 HTML fisrt publiced 
+1995 HTML 2.0
+1997 HTML 3.2
+1999 HTML 4.01
+2000 XHTML 1.0
+2002
+2009
+2012 HTML5
+2014 HTML5.1
+
+after HTML 4.01 was released, focus shifted to XHTML and its stricter standards.
+XHTML 2.0 had very strict standards but was abandoned in 2009 in favor of HTML5.
+HTML5 is much more tolerant and can handle markup from all the prior version. A working draft was released in 2012 and it is 
+schdeduled to be finalized by the end of 2014
+
+HTML5.1 is currectly under development and expected to be finalized in late 2016.
+
+Goals of HTML5
+Support all existing web pages. With HTML5, there is no requirement to go back and revise older webistes.
+Reduce the need for external plugins and scripts to show website content.
+Improve the semantic definition (i.e. meaning and purpose ) of page elements.
+Make the rendering of web content universal and independent of the device being used 
+
+New Elements in HTML5
+<article> <figcaption> <progress>
+<aside> <footer> <section>
+<audio> <header> <source>
+<canvas> <hgroup> <svg>
+<datalist> <mark> <time>
+<figure> <nav> <video>
+
+these are just some of the new elements introduced in HTML5. We will be exploring each of these during this
+course
+
+Other new features in HTML5
+-> Built-in audio and video support (without plugins)
+-> Enhanced form controls and attributes
+-> The Canvas ( a way to draw directly on a web page)
+-> Drag and Drop functionality
+-> Support for CSS3 (the newer and more powerful version of CSS)
+-> More advanced features for web developers, such as data storage and offline applications.
+
+First Look at HTML5
+Remember the DOCTYPE declaration from XHTML and HTML?
+<!DOCTYPE html PUBLIC "-//W3C//DTD XTML 1.0 Transitional//EN"
+"http://www.w3.org//TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" " http://www.w3.org/TR/html4/loose.dtd">
+
+In HTML5, there is just one possible DOCTYPE declaration and it is simpler:
+<!DOCTYPE html>
+
+which is just 15 characters!
+
+
+This is what the <html> element looked like in XHTML:
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+again, HTML5 simplifies this line:
+<html lang = "en">
+
+The lang attribute in the <html> element declares which lagnuage the page content is in.
+
+
+
+Here is a typeical XHTML <head> section:
+<head>
+    <meta http-equiv="content-type" content = "text/html; charset = utf-8" />
+    <title> My First XHTML Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+And the HTML5 version:
+<head>
+    <meta charset="utf-8">
+    <title> My First HTML5 Page</title>
+    <link rel="style
+

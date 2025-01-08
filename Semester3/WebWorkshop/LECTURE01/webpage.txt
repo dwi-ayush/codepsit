@@ -1,0 +1,10 @@
+what is web page?
+-> Web pages are text files containing HTML
+->HTML - Hyper Text Markup lagnuage
+    -> A notation for describing
+        ->A notation for describging
+            ->document structure (semantic markup)
+            ->formatting (presentation markup)
+        ->Looks(looked?) like:
+            ->A Microsoft Word document
+->The markup tags provide information about the page content structure

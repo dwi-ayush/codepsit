@@ -1,0 +1,22 @@
+types of run time errors:
+1.) file not found errors
+2.) index errors
+3.) key errors -> when key doesn't exist in dictionary 
+4.) devide by zero errors
+5.) value errors
+6.) Type error -> int + str
+7.) attribute error - when object doesn't possess that specific attribute or method
+8.) import error -> this error is encountered when an attempt is made to import a module that is unavailable.
+
+types of compile time error:
+1.) syntax error
+2.) semantic error
+
+
+
+there can also be manual raising of assertion:
+using raise keyword
+raise valueError
+
+there are assertion as well
+

@@ -1,0 +1,165 @@
+
+    insert(pair)
+        Description: Inserts a key-value pair into the std::map.
+        Example: myMap.insert({42, "forty-two"});
+        Time Complexity :    O(log N)
+        Space Complexity :   O(1)
+
+    erase(key)
+        Description: Removes the key-value pair with the specified key from the std::map.
+        Example: myMap.erase(42);
+        Time Complexity :    O(log N)
+        Space Complexity :   O(1)
+
+    find(key)
+        Description: Searches for a key in the std::map and returns an iterator to the element, or end() if not found.
+        Example: map<int, string>::iterator it = myMap.find(42);
+        Time Complexity :    O(log N)
+        Space Complexity :   O(1)
+
+    at(key)
+        Description: Returns a reference to the value associated with the specified key. Throws an exception if the key is not found.
+        Example: myMap.at(42);
+        Time Complexity :    O(log N)
+        Space Complexity :   O(1)
+
+    size()
+        Description: Returns the number of elements in the std::map.
+        Example: myMap.size();
+        Time Complexity :    O(1)
+        Space Complexity :   O(1)
+
+    empty()
+        Description: Checks if the std::map is empty.
+        Example: myMap.empty();
+        Time Complexity :    O(1)
+        Space Complexity :   O(1)
+
+    clear()
+        Description: Removes all elements from the std::map.
+        Example: myMap.clear();
+        Time Complexity :    O(N)
+        Space Complexity :   O(1)
+
+    begin()
+        Description: Returns an iterator to the first element in the std::map.
+        Example: myMap.begin();
+        Time Complexity :    O(1)
+        Space Complexity :   O(1)
+
+    end()
+        Description: Returns an iterator to the past-the-end element in the std::map.
+        Example: myMap.end();
+        Time Complexity :    O(1)
+        Space Complexity :   O(1)
+
+
+ Map theory
+
+Key -> value
+ 
+Map is based on Red-Black Tree (it's a type of self balancing tree)
+
+BST --> Binary Search Tree
+
+Data Structure 
+                ---- > Stack
+                ---- > Queue 
+                            ---->Circular 
+                            ---->Priorty Queue
+                                --->heap
+                                    ---->max
+                                    ---->min
+                --- >   General Tree
+                --- >   BST
+                        ---> AVL
+                        --->RBTree (red-black tree)
+                ----> Graphs
+
+linked list :
+doesn't have the concept of parent child
+all elements are siblings to each other
+
+
+
+general tree can have any number of children for any parent
+binary tree can have atmax 2 children
+
+forest --> if you remove root node from a binary tree then 
+it's called a disjoint set of union and it's called a forest
+
+binary search tree: 
+(BST)
+
+binary tree T is termed Binary Search Tree (or Binary Tree)
+if each node N of T satisfies the following properly :-
+    The value of N is greater than every value in the left sub-tree of N and is less than every value in the right sub-tree of N.
+
+
+there are 4 operations in a binary search tree:-
+a.) searching Data
+b.) Inserting Data
+c.) Deleting Data.
+d.) Traversing the Tree.
+
+1.) Tree Traversal
+Inorder ->      LNR
+Preorder ->     NLR
+Postorder ->    LNR
+
+
+2.)Inserting Data
+
+
+searching algorithm of BST
+input: ITEM is the data that has to be searched 
+output: if found then pointes to the node containing data ITEM else a message
+Data Structure: linked structure of the binary tree Pointer to the root node is ROOT
+
+
+steps:
+1.) ptr = ROOT, flag = FALSE // start from the root.
+2.) while (ptr!=NULL) and (flag=FALSE) do
+3.)     CASE: ITEM < ptr -> DATA // GOTO LEFT SUB-Tree
+4.)         ptr = ptr->LCHILD
+5.)     CASE: ptr-> DATA = ITEM
+6.)             flag=TRUE
+7.)     CASE: ITEM>ptr->DAT // GOTO RIGHT SUB-Tree
+8.)             ptr=ptr->RCHILD
+9.)  ENDCASE
+10.)ENDWHILE
+11.)if(flag==TRUE) then   //search is successful
+12.) print "ITEM HAS BEEN FOUND AT THE NODE", ptr
+13.)else
+14.) print "ITEM does not exists: search is unsuccessful"
+15.)Endif
+16.)Stop.
+
+
+algorithm of INSERTING in BST
+1.) ptr=ROOT, flag=FALSE
+2.) while(ptr!=NULL) && (flag=FALSE) do
+3.)     CASE:ITEM<ptr->DATA // GOTO LEFT SUBTREE
+4.)         PTR1=ptr
+5.)         ptr=ptr->LCHILD
+6.)     CASE: ITEM>ptr->DATA // GOTO RIGHT SUBTREE
+7.)         ptr1=ptr
+8.)         ptr=ptr->RCHILD
+9.)     CASE: ptr->DATA = ITEM  //NODE exists
+10.)        flag=TRUE
+11.)        print "item already exists".
+12.)        exit 
+13.)    ENDCASE
+14.)ENDWHILE
+15.)if (ptr==NULL) then // insert when the search halts at the dead end
+16.)       new = getnode(NODE)
+17.)        new -> DATA= ITEM // avail a node 0 then initali it
+18.)        new-> LCHILD = NULL
+19.)        new -> RCHILD = NULL
+20.)        if (ptr1->data <ITEM) then
+21.)            ptr1->RCHILD = new
+22.)        else
+23.)            ptr1->LCHILD = new
+24.)        Endif
+25.)Endif
+26.)stop.

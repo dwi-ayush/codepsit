@@ -1,0 +1,31 @@
+Here's a brief introduction to CSS:
+
+CSS (Cascading Style Sheets):
+
+    Purpose: CSS is used to style and layout web pages. It controls the appearance of HTML elements.
+    Syntax: CSS is made up of selectors (which element to style) and declarations (how to style it).
+        Example: h1 { color: blue; font-size: 20px; }
+        Selector: h1 (which element)
+        Declaration block: { color: blue; font-size: 20px; }
+    Types of CSS:
+        Inline CSS: Written directly in the HTML element.
+            Example: <p style="color:red;">Text</p>
+        Internal CSS: Defined within the <style> tag in the HTML <head>.
+            Example:
+
+            html
+
+        <style> p { color: green; } </style>
+
+    External CSS: In a separate .css file, linked to the HTML.
+        Example: <link rel="stylesheet" href="style.css">
+
+Cascading: CSS rules are applied in a cascading manner, with priority given to the most specific selectors.
+
+
+create an HTML document and apply CSS to 
+-create a div tag with a width of 200px and a height of 100px
+and a solid border of 2px and a border radius of 10px to the div tag
+add a padding of 10px and a margin of 20px to the div tag 
+use the box sizing property to ensure the padding and border arc included in the width and height
+of the div tag

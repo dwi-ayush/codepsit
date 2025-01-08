@@ -1,0 +1,67 @@
+// make a time table as exercise, monday to friday
+// leave saturday, sunday empty
+
+
+
+//Table Elements - 
+
+
+The table element represents data with more than one dimension in the form of a table.
+
+Tables have rows, columns, and cells given by their descendants. The rows and columns form a grid; a table's cells must completely cover that grid without overlap.
+
+
+Colspan/Rowspan Attributes
+
+
+write a HTML code in which create a table of 3 columns (name,city,age)
+number of rows accordingly
+
+
+Form
+
+
+It is used to collect user data from user
+HTML input types:
+<input type="button">
+
+1.) button
+2.) checkbox
+3.) color
+4.) date
+5.) time
+6.) email
+7.) file
+8.) month
+9.) age
+10.) number
+11.)password
+12.)range
+13.)radio
+etc
+
+default value of the type Attributes is text 
+
+
+HTML input Attribute:-
+value - to provide or specify an initial value for an input field
+
+the most important tag in HTML form is label
+it defines a label for several items
+
+label is also used in CSS
+the <label> tag defines a label for many form elements.
+The for Attribute of the <label> tag should be equal to the id Attribute of the <input> element to bind them together.
+DataList is also a tag : with predefined options, this is connected to an input element
+
+Practice Problem -1 
+create an HTML form that includes the following:
+-A text input for the user's name.
+An email input for the user's email address
+A password input colour picker for the user's favourite colour.
+A date picker for the user's birthdate.
+A submit button
+
+
+N21 
+

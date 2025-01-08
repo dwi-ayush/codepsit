@@ -1,0 +1,4 @@
+swap() has the complexity in vectors O(1)
+
+// example
+vect.swap(vect); // swap contents of vec1 and vec2

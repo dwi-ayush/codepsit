@@ -1,0 +1,9 @@
+Doubly Linked List
+
+
+struct node {
+    sturct node * prev;
+    int val;
+    struct node * next;
+}
+

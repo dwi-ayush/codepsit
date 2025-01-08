@@ -1,0 +1,208 @@
+Vector is sequence container
+
+map -> orderered map -> binary search tree (R-B Tree) 
+    -> unordered map
+
+BST: left node is always smaller than the root node and right node is larger than the root node
+
+O(logN) for BST (access)
+
+unordered map is based on hashing concept
+
+an example would be an array of students
+where key is the roll number and 
+value is the name or student info
+
+
+hash table: 
+hashing function is used to derive keys
+
+value is input to get the key
+
+h(x) 
+
+unordered map is an associative container
+same with ordered map, vector is sequence container
+ 
+hashing function example (k%10)
+where k is the value
+suppose a value 1234
+if we take % 10 then we get the key 4
+so we store it at 4
+
+so storing the vlaue 1234 at index 4
+if two values get the same key 
+after the hashing then it's called collision
+they get collided index 
+
+hashing table is the table that stores it's a data structure
+key values 
+
+hashing has the best case complexity of O(1)
+
+Binary search  - > O(logn)
+Linear search - > O(n), O(1)
+hashing comp - > O(1) for best case
+
+
+Unordered map
+Function    Description example TimeComplexity  spacecomplextity 
+insert(pair) inserts a key-value pair into the unordered_map    mymap.insert({42,"forty-two"}); O(1) average, O(n) worst-case   O(1)
+erase(key)  Removes the key-value pair with the specfidied key from the unordered_map   MyMap.erase(42);    O(1)average, O(n) worst-case    O(1)
+find(key)    Searches for a key in the unordered and returns an iterator or end() if not found  unordered_map<int,string>::iterator it = myMap.find(42);    O(1) average, O(n) worst-case   O(1)
+at(key) Accesses the value associated with a specfied key.  String value = myMap.at(42);    O(1) average, O(N) worst-case   O(1)
+
+the remaining are same as ordered map
+
+
+
+difference between vector, maps and unordered_map
+
+Feature     std::vector     std::map    std::unordered_map
+type        sequence container  Associative container   associative container
+memory      contiguous       Tree structure (typically red-black tree)  Hash table
+Accesses    O(1) random access  O(log n) by key         O(1) average by key, O(n) worst-case
+Insertion/deletion O(1) at end, O(n) elsewhere O(logn)  O(1) average, O(n) worse-case
+Order       Maintains insertion order   Sorted by key   No order
+Usage   Dynamic arrays, frequent access by index        associating keys with values, maintaining order             associating keys with values fast access
+
+
+
+
+
+
+
+
+Hash functions
+A hash function --> matahematical formula ->
+when applied to a key, produces an integer-> which can be used as an index for the key in the has table.
+
+-> aim of hash function -> is that elements should be relatively, randomly and uniformly distributed.
+
+-> it produces a unique set of integers within some suitable range of in order to reduce the number of collision.
+
+hashing just reduces collision there is no gurantee of collision removal
+
+
+HASH FUNCTIONS:
+we discuss the has functions which uses numeric keys.
+however, there can be cases in real world applications where we can have alphanumeric keys rather than simple numeric keys.
+
+Division Method:
+It is the most simple method of hashing an integer x
+This method divides x by M and then uses the remainder obtained.
+The has functions can be given as
+
+B(x) = X mod M 
+
+
+
+
+Question the hash value of keys 1234 and 5462
+solution:
+m=97, hash value can be calculated as
+
+h(1234) = 1234%97 = 70
+h(5642) = 5642%97 = 16
+
+
+
+Multiplicative Method:
+h(k) = | m(kA mod 1) | 
+where A is a constant value varies between 0 and 1
+best case is 0.67 for A 
+Given a has table of size 100, map the key 12345 to an appropriate
+location in the hash table.
+
+=> we will use A = 0.618033, m = 1000 and k = 12345
+h(12345) = |100(12345 x 0.618033 mod 1) |
+        = | 100(7629.617385 mod 1)|
+        = |1000 (.617385) |
+        = |617.385|
+        = 617
+
+
+Mid Square method:
+
+when k = 1234 , k^2 = 1522756, h(1234) = 27
+ k = 5642, k^2 = 21832164, h(5642) = 21
+
+ Observe that 3rd and 4th digits starting from the right are choosen.
+
+
+ Folding Method:
+ This method works in the following two steps:->
+ step1.) divide the key value into a number of parts.
+ That is , divide k into parts k1,k2,..., kn, where each part has thesame no. of digits except the last part which may have lesser digits than the other parts.
+
+ step2.)add the individual parts. That is, obtain the sum of
+    k1 + k2 + ...... + kn
+    the hash value is produced by ignoring the last carry
+
+given a hashtable of 100 location, calculate the has value using folding method for keys 5678, 321, and 24567.
+
+
+soln-> since there are 100 emmeory locations to address, we will break the key into parts where each part (except the last) will containertwo digits. the has values can be obtained as shown below: ->
+
+
+key     5678        321     34567
+parts 56 and 78     32 and 1         34,56 and 7
+sum     134         33           97
+hash value      43      33          97
+
+
+collision:
+collision occurs when the hash function maps two different keys to the same location.
+obviously, two records cannot be stored int he same location.
+therefore-> a method used to solve the problem of collision,
+also called collision resolution technique, is applied
+
+
+two most popular methods of resolving collision are
+
+1.) open addressing : has functions designed
+        --> linear probing : in this technique, if a value is already stored at a location generated by h(k), then the following hash function is used to resolve the collision:-
+            h(k,i) = [h'(k)+i]mod m 
+            where m is the size of the hash table, h'(k) = (kmodm), and 'i' is the probe number that varies from 1 to m-1.
+
+
+            Question: consider a hash table of size 10. Using Linear probing, insert the key 72,27,36,24,63,81,92 and 101 into the table?
+            let h'(k') = k mod m , m= 10
+            0   1  2  3  4  5  6  7  8  9
+            -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+
+            step 1: -> key = 72
+            h(72,0) = (72mod(10+0)) mod 10
+            = 2 mod 10
+            = 2
+            since T[2] is vacant, insert key 72 at this location.
+            0   1  2  3  4  5  6  7  8  9
+            -1 -1 72 -1 -1 -1 -1 -1 -1 -1
+
+            
+        --> quadratic probing: h(k,i) = [h'(k) + c1i + c2i^2] mod M
+        more the no. of collision, higher the probes that are required to find a free location and lesser is the performance. this phenomena called PRIMARY CLUSTERING.
+
+            consider a hash table of size 10. using quadratic probing, insert the keys 72, 27, 36, 24, 63, 81 and 101 into the table. Take c1 = 1 and C2 = 3.
+                Let h'(k) = k mod m, m=10
+                    0   1  2  3  4  5  6  7  8  9
+                    -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+                we have h(k,i) = [h'(k) + c1.i + c2.i^2] mod m 
+                step 1- key = 72
+                    h(72,0) = [72 mod 10 + 1 x 0  + 3 x 0 ] mod 10
+                            = [72 mod 10] mod 10
+                            = 2 mod 10
+                            = 2
+        --> double hashing:
+            h(k,i) = [h1(k)+ ih2(k)] mod m
+        --> rehashing 
+2.) chaining : uses linked list 
+question: 7,24,18,36,54, 11 and 23 insert the 
+
+
+
+
+
+// question to code: 
+// make a hash map, unordered using chaining
+

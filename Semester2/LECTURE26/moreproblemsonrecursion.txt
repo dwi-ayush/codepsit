@@ -1,0 +1,34 @@
+//find the permutations of a given array
+
+public:
+
+    vector<vector<int>> permute (vector<int> & nums){
+        vector<vector<int>> ans;
+        vector <int>ds;
+        int freq[nums.size()];
+        for (int i = 0 ; i< nums.size();i++)
+            freq[i] = 0;
+        recurPermute(ds,nums,ans,freq);
+        return ans;
+    }
+
+// subset 2: given an integer array nums, that may contain duplicates, return all possible subsets
+// the solution must not contain duplicate subsets, return the solution in any order
+
+// 1,2,2,2,3,3
+// {}
+// 1
+// 2
+// 2
+// 2
+// 3
+// 3
+// 1,2
+// 1,2
+// 1,2
+// 1,3
+// 1,3
+// 2,1
+// 2,2
+// 2,2
+// 

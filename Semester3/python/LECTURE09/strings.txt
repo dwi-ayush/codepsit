@@ -1,0 +1,13 @@
+A string in Python is a sequence of characeters enclosed within single quotes ('...')
+or double quotes ("..."). Strings are immutable, meaning once a string is created, its content cannot be 
+changed
+
+
+Creating Strings
+
+-> Single-line strings: Use single or double quotes.
+    -> string1 = 'Hello'
+    -> string2 = "Python"
+-> Multi-line strings: Use triple quotes("""...""") or ('''...''')
+
+

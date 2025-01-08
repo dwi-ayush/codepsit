@@ -1,0 +1,14 @@
+Subusequence is a contiguous/non-contiguous sequences which (follows the order).
+-> it is necessary that it follows the order of the array
+
+
+arr -> [3,1,2] -> Subusequences
+null is also a Subusequence
+3 -> is also a Subusequence
+3,1 -> Subusequence
+3,2 -> Subusequence
+
+
+
+
+

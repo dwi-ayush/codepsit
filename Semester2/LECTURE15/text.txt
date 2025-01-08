@@ -1,0 +1,19 @@
+map is a container
+which storesthe element in form of key value pair
+map { key, value}
+like a linked list
+
+student roll number could be a key
+and student marks are the value
+
+maps don't have duplicate keys
+just like you can't have dulplicate roll numbers
+
+
+implement by binary search tree (ordered map)
+            -> height balanced BST(AVL Tree)
+            -> Red Black Tree
+
+
+
+            
